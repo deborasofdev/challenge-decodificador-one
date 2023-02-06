@@ -5,8 +5,8 @@ var imgfrase1 = "imagens/frase1.png";
 var imgfrase3 = "imagens/frase3.png";
 var imgcrip = "imagens/astronauta2.png";
 var imgcrip3 = "imagens/astronauta3.png";
-var imgfrase3 = "imagens/frase3.png";
-var imgfrase4 = "imagens/frase4.png";
+var imgfrase3 = "imagens/frase3.PNG";
+var imgfrase4 = "imagens/frase4.PNG";
 var btnCopiar = document.querySelector(".botao-copiar");
 
 // As "chaves" de criptografia que utilizaremos são:
