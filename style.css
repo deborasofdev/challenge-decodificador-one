@@ -170,7 +170,7 @@ main {
 
 @media (max-width: 1110px) {
     main {
-        height: 800px;
+        height: 1100px;
         flex-direction: column;
         margin: 20px;
     }
