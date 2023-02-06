@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Decodificador</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo" onclick="window.location.reload()" style="cursor: pointer;"><img class="icon-logo" src="icones/icon_logo.png"> Decodificador</h1>
+    </header>
+
+    <main>
+        <section>
+            <textarea class="texto-area" id="texto-area" type="text" cols="41" rows="4" placeholder="Digite o seu texto.."></textarea>
+
+            <div class="informacao">
+                <p class="frase"><img src="icones/exclamacao.svg" alt="ponto de exclamação">Apenas letras minúsculas e sem acento.</p>
+            </div>
+
+            <div class="botoes">
+                <button class="botao-encriptar" onclick="botaoEncriptar()"><img id="iconbloquear" src="icones/icon_bloquear.png" alt="cadeado fechado">Criptografar</button>
+                <button class="botao-desencriptar" onclick="botaoDesencriptar()"><img id="icondesbloquear" src="icones/icon_desbloquear.png" alt="cadeado aberto">Descriptografar</button>
+                <button class="botao-limpar" id="limpar" onclick="window.location.reload()"><img id="iconlimpar" src="icones/icon_limpar.png" alt="vassoura limpando">Limpar Tela</button>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <textarea class="mensagem" id="texto" type="text" cols="20" rows="10"></textarea>
+            </div>
+            <div id="foto">
+                <img class="imagem" id="imagem1" src="imagens/astronauta.png" alt="astronalta">
+            </div>
+            <div id="frase-foto1">
+                <img id="frase1" src="imagens/frase1.png" alt="astronalta">
+                <img id="frase2" src="imagens/frase2.png" alt="astronalta">
+            </div>
+            <div>
+                <button class="botao-copiar" id="copiar"><img src="icones/icon_copiar.png" alt="folhas copias">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="link-redes">
+            <a href="https://www.linkedin.com/in/debora-cavalcante/" target="_blank"><img class="btnlinke" src="icones/icon_linkedin.png" alt="icone icon_linkedin"></a>
+            <a href="https://github.com/deborasofdev" target="_blank"><img class="btngit" src="icones/icon_github.png" alt="icone github"></a>
+            <p class="copyright">&copy; Copyright Debora Cavalcante Sofia - 2023. Programa ONE - Challenge Encriptador</p>
+        </div>       
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

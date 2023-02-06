@@ -1,0 +1,276 @@
+* {
+    background: #EDE7E1;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+header {
+    margin-left: 10px;
+    padding-top: 30px;
+    width: 30%;
+}
+
+.icone-logo{
+    margin-left: 40px;
+}
+
+.titulo {
+    font-family: 'Gaegu', cursive;
+    color: #9A12B3;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+main {
+    display:flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+.texto-area {
+    border: 5px solid;
+    border-radius: 24px;
+    color: #9A12B3;
+    margin-top: 90px;
+    text-transform: lowercase;
+    padding-left: 10px;
+}
+
+::placeholder { color: #9A12B3; }
+    .texto-area:focus {
+        outline: none;
+    }
+
+.mensagem {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 250px;
+    border: 5px solid;
+    border-radius: 24px;
+    color: #9A12B3;
+    margin-left: 65px;
+    height: 545px;
+    padding-left: 20px;
+    position: inherit;    
+}
+
+.mensagem:focus {
+    outline: none;
+}
+
+.imagem {
+    background-position: center;
+    display: flex;
+    height: 280px;
+    padding-left: 20px;
+    margin-left: 110px;
+    margin-top: -500px;
+}
+
+#foto {
+    display: flex;
+    justify-content: center;
+}
+
+#frase-foto1 {
+    background-position: center;
+    margin-left: 105px;
+    margin-top: -220px;
+    padding-left: 20px; 
+    width: 30px;
+    height: 8px;
+}
+
+.botoes {
+    display: flex;
+}
+
+.botao-encriptar {
+    background-color: #9A12B3;
+    border: 1px solid #9A12B3;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 47px;
+    width: 236px;
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+.botao-desencriptar {
+    background-color: #9A12B3;
+    border: 1px solid #9A12B3;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 47px;
+    margin-left: 30px;
+    margin-top: 50px;
+    width: 236px;
+    font-size: 25px;
+}
+
+.botao-limpar {
+    background-color: #9A12B3;
+    border: 1px solid #9A12B3;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 47px;
+    width: 236px;
+    margin-top: 50px;
+    margin-left: 30px;
+    font-size: 25px;
+}
+
+.botao-copiar {
+    background-color: #9A12B3;
+    border: 1px solid #9A12B3;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 47px;
+    margin-left: 130px;
+    margin-top: 105px;
+    width: 236px;
+    font-size: 25px;
+}
+
+.botao-encriptar:hover, .botao-desencriptar:hover, .botao-limpar:hover, .botao-copiar:hover {
+    transform: scale(1.1);
+}
+
+.informacao {
+    margin-bottom: 60px;
+}
+
+.frase {
+    color: #495057;
+    font-size: 14px;
+}
+
+.link-redes {
+    font-size: 13px;
+    text-align: center;
+}
+
+.btngit:hover, .btnlinke:hover {
+    transform: scale(1.2);
+}
+
+.copyright {
+    font-size: 14px;
+    text-align: center;
+    margin: 5px 0 3px;
+}
+
+/*responsividade*/
+
+@media (max-width: 1110px) {
+    main {
+        height: 800px;
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .texto-area{
+        height: 120px;
+    }
+}
+
+@media (max-width: 750px) {
+    .icone-logo{
+        width: 30px;
+        margin-left: -5px;
+    }
+
+    .titulo{
+        font-size: 25px;
+        margin-left: 10px;
+    }
+
+    .frase{
+        font-size: 1rem;
+    }
+
+    .botoes{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: -100px;
+    }
+
+    .botao-encriptar, .botao-desencriptar, .botao-limpar {
+        margin-left: 5px;
+        width: 150px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    #iconbloquear, #icondesbloquear, #iconlimpar {
+        width: 25px;
+        
+    }
+}
+
+@media (max-width: 400px) {
+    .texto-area{
+        width: 250px;
+        font-size: 1rem;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .mensagem{
+        width: 200px;
+        height: 290px;
+        margin-top: 30px;
+        position: inherit;
+        margin-left: 18px;
+        
+    }
+
+    .imagem, #foto {
+        width: 160px;
+        height: 110px;
+        margin-left: 30px;
+        margin-top: -130px;
+        position: inherit;
+    }
+
+    #frase-foto1 {
+        margin-top: -180px;
+        margin-left: 35px;
+        position: inherit;
+    }
+
+    #frase1 {
+        width: 160px;
+        margin-top: 50px;
+    }
+
+    #frase2{
+        width: 160px;
+    }
+
+    .botao-copiar{
+        width: 120px;
+        height: 40px;
+        font-size: 1rem;
+        text-align: center;
+        margin-left: 80px;
+        margin-top: 130px;
+        position: inherit;
+    }
+    .link-redes{
+        margin: 0 auto;
+        width: 150px;
+        margin-left: 60px;
+    }
+
+    .copyright {
+        font-size: 1rem;
+    }
+}
+
+
